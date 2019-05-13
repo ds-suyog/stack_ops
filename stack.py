@@ -89,6 +89,28 @@ class Stack:
 		except StackEmptyError as e:
 			print(e)
 
+	def method_unittest(self):
+		raise StackEmptyError
+
+	def top(self):
+		"""Return the most recent value pushed onto stack.
+        However the value is not popped from the stack it's just
+        returned.
+
+        Returns: Most recent value pushed onto stack.
+
+        Raises:
+            StackEmptyError: When trying to read from empty stack.
+        """
+
+		try:
+			if self.is_empty():
+				#raise Exception("Stack empty")
+				raise StackEmptyError				
+			return self._stack[-1]
+		except Exception as e:
+			print(e)
+
 	def is_full(self):
 		"""Return True when stack full otherwise False."""		
 		return len(self._stack) == self._capacity
