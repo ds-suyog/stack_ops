@@ -50,6 +50,26 @@ class Stack:
 	def temp(self,value):
 		self._capacity = value
 
+	def push(self, value):
+		"""Push a value onto the stack.
+
+		Params:
+            value: An integer value to be pushed onto the stack.
+
+        Raises:
+            StackFullError: When no more values can be pushed
+                onto stack due to lack of space.
+        """
+
+		try:
+			if self.is_full():
+				#raise Exception("Stack full")
+				raise StackFullError
+			else:
+				return self._stack.append(value)
+		except StackFullError as e:
+			print(e)
+
 	def is_full(self):
 		"""Return True when stack full otherwise False."""		
 		return len(self._stack) == self._capacity
