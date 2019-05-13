@@ -70,6 +70,25 @@ class Stack:
 		except StackFullError as e:
 			print(e)
 
+	def pop(self):
+		"""Pop a value from the stack.
+
+		Returns: The integer value popped from the stack.
+
+		Raises:
+		StackEmptyError: When trying to pop from empty stack.
+		"""
+		try:
+			if self.is_empty():
+				#raise Exception("Stack empty")
+				raise StackEmptyError
+			else:
+				pop_value = self._stack[-1]
+				del self._stack[-1]		
+				return pop_value
+		except StackEmptyError as e:
+			print(e)
+
 	def is_full(self):
 		"""Return True when stack full otherwise False."""		
 		return len(self._stack) == self._capacity
