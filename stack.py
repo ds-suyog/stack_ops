@@ -1,3 +1,7 @@
+from stack_exceptions import StackError
+from stack_exceptions import StackFullError
+from stack_exceptions import StackEmptyError
+import time
 
 class Stack:
 	"""Create and perform general stack operations."""
@@ -119,3 +123,106 @@ class Stack:
 		"""Returns true if stack is empty, else false"""		
 		return len(self._stack) == 0
 
+
+def main():
+	print("demo begins...")
+	print()
+	time.sleep(1)
+	print("accessing doc string of class Stack...")	
+	time.sleep(2)
+	print(Stack.__doc__)
+	print()
+	time.sleep(3)
+
+	print("displaying attributes of class Stack...")
+	time.sleep(2)
+	print(dir(Stack))
+	print()	
+	time.sleep(4)
+
+	print("displaying doc string of class method 'from_values' ...")	
+	time.sleep(3)
+	print(Stack.from_values.__doc__)
+	print()	
+	time.sleep(3)
+
+	print("testing...")
+	print()
+	time.sleep(1)
+
+	print("creating empty stack...")
+	time.sleep(2)
+	s = Stack()	
+	print(s)
+	print("stack created.. ")
+	print()
+	time.sleep(2)
+
+	print("checking if stack is empty...")
+	time.sleep(2)
+	print("stack empty? %s" % (s.is_empty()))
+	print()
+	time.sleep(2)	
+
+	print("Exception use-case: doing pop on empty stack...")
+	time.sleep(3)
+	s.pop()
+	print()
+	time.sleep(2)
+
+	print("Exception use-case: fetching top value of empty stack...")
+	time.sleep(3)
+	s.top()
+	print()
+	time.sleep(2)
+
+	print("creating stack of size 5...")
+	time.sleep(2)
+	s = Stack.from_values(1,2,3,4,5)	
+	print(s)
+	print("stack created.. ")
+	print()
+	time.sleep(2)
+
+	print("operation: pop from stack")
+	time.sleep(2)
+	print("popped value = %s" % (s.pop()))
+	time.sleep(1)
+	print("result stack: %s" % (str(s)))
+	print()
+	time.sleep(2)
+
+	print("operation: push 5 onto stack")
+	time.sleep(2)
+	s.push(5)
+	print("result stack: %s" % (str(s)))
+	print()
+	time.sleep(2)
+
+	print("operation: fetch top value from stack")
+	time.sleep(2)
+	top = s.top()	
+	print("top value = %s" % (top))	
+	print("result stack: %s" % (str(s)))
+	print()
+	time.sleep(2)
+
+	print("checking if stack is full...")
+	time.sleep(3)
+	print("is stack full? %s" % (s.is_full()))
+	print()
+	time.sleep(2)
+
+	print("Exception use-case: pushing value 6 on full stack...")
+	time.sleep(3)
+	s.push(6)
+	print()
+	time.sleep(2)
+
+
+	print("demo ends!")	
+
+
+
+if __name__ == '__main__':
+	main()
