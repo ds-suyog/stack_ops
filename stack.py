@@ -1,0 +1,60 @@
+
+class Stack:
+	"""Create and perform general stack operations."""
+	count = 0
+
+	def __init__ (self, cap = 5):
+		self._capacity = cap
+		self._capacity=Stack.round5(cap)
+		self._stack = []
+		Stack.count += 1
+	def __str__(self):
+		return str(self._stack)
+	def __len__(self):
+		return len(self._stack)
+	def __contains__(self, val):
+		return val in self._stack
+
+	@classmethod
+	def from_values(cls,*args):
+		"""Construct a Stack from given values.
+		
+		Params:
+		*args: Integer values to be pushed onto the stack being created.
+		
+		Returns: The newly created Stack object
+		"""
+		stk = cls(len(args))
+		for val in args:
+			stk.push(val)
+		return stk
+
+	@staticmethod
+	def round5(value):
+		"""Round the value to the next multiple of 5."""			
+		if value % 5 == 0:
+			return value
+		else:
+			return value + (5 - value % 5)	
+
+	""" Using temp() to hide member '_capacity', exposing 'temp'. 
+		Added decorator '@property', so method can be used as property. 
+		From outside it will look property, not method
+	"""
+	@property
+	def temp(self):
+		return self._capacity
+
+	"""  to set val: s.temp = <value>	"""
+	@temp.setter
+	def temp(self,value):
+		self._capacity = value
+
+	def is_full(self):
+		"""Return True when stack full otherwise False."""		
+		return len(self._stack) == self._capacity
+
+	def is_empty(self):
+		"""Returns true if stack is empty, else false"""		
+		return len(self._stack) == 0
+
