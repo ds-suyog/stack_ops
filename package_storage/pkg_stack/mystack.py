@@ -1,6 +1,6 @@
-from stack_exceptions import StackError
-from stack_exceptions import StackFullError
-from stack_exceptions import StackEmptyError
+from .stack_exceptions import StackError
+from .stack_exceptions import StackFullError
+from .stack_exceptions import StackEmptyError
 import time
 
 class Stack:

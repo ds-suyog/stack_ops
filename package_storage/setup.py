@@ -5,10 +5,10 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="pkg-stack-skscodes",
-    version="0.0.2",
+    version="0.0.62",
     author="suyog k sethia",
     author_email="ssethia86@gmail.com",
-    description="A small example package",
+    description="It is documented package 'pkg_stack' which provides feature 'stack' functionality",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/pypa/sampleproject",

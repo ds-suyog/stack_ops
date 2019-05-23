@@ -1,8 +1,8 @@
 import unittest
 
-from mystack import Stack
-from stack_exceptions import StackFullError
-from stack_exceptions import StackEmptyError
+from .mystack import Stack
+from .stack_exceptions import StackFullError
+from .stack_exceptions import StackEmptyError
 
 
 class StackTests(unittest.TestCase):

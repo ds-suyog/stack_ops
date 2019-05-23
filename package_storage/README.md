@@ -1,5 +1,5 @@
 # stack_ops package     #
-## Author: Suyog K Sethia    ##     
+### Author: Suyog K Sethia    ###     
      
 I have created documented package 'pkg_stack' which provides feature 'stack' general functionality, with exception handling. I also threw in unittest, which is runnable after installing package, and it checks sanity of package 'pkg_stack'.      
      
@@ -9,13 +9,15 @@ pip install pkg-stack-skscodes
 ```         
       
 ## To Import Package 'pkg_stack':           ##
-`import pkg_stack`     
+```
+import pkg_stack
+```     
     
 ## Find Attributes:      ##
 ```
-from pkg_stack.mystack import Stack\
-dir(Stack)\
-dir(Stack())\
+>>>from pkg_stack.mystack import Stack
+>>>dir(Stack)
+>>>dir(Stack())
 ```     
 
 ## Find Help:  ##
@@ -47,8 +49,7 @@ pop(self)
 
 ### Example: ###   
 ```
->>>from pkg_stack.mystack import Stack`              
->>>s = Stack()        
+>>>from pkg_stack.mystack import Stack                   
 >>>s = Stack.from_values(1,2,3,4)           
 >>>print(s)     
 [1, 2, 3, 4]    
@@ -57,7 +58,7 @@ pop(self)
 ## Exception Handling:    ##           
 ### case-1:     ###
 ```
->>>from pkg_stack.mystack import Stack`                      
+>>>from pkg_stack.mystack import Stack                    
 >>>s = Stack()               
 >>>s.pop()      
 stack is empty.       
