@@ -9,7 +9,7 @@ I have written documented package 'pkg_stack' which provide feature 'stack' func
 $pip install pkg-stack-skscodes
 ```     
      
-## TO IMPORT PACKAGE:          ##
+## To import package:          ##
 ```
 from pkg_stack.mystack import Stack
 ```       
