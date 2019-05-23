@@ -1,20 +1,25 @@
 # stack_ops package
-This is a hand made feature 'stack' with unittest. There are two implementations:    
-1. In script, stack.py  
-2. By installing my uploaded package 'pkg_stack' through pip
+I have written documented package 'pkg_stack' which provide feature 'stack' functionality, with exception handling. I also threw in unittest, which is runnable after installing package, and cit checks sanity of package 'pkg_stack'.      
+     
+INSTALL PACKAGE 'pkg_stack' via pip:         
+pip install pkg-stack-skscodes     
+     
+TO IMPORT PACKAGE:          
+from pkg_stack.mystack import Stack       
 
-== Execution by installing package 'pkg_stack':      
-To install package 'pkg_stack':          
-pip install pkg-stack-skscodes   
-
-To import:     
-from pkg_stack.mystack import Stack   
-
-
-== Regular/Direct source code execution:     
-run demo:     
-python mystack.py    
-
-run unittest:     
+For rest information please refer README.md in directory package_storage      
+     
+     
+RUN SOURCE CODE:     
+To Run Demo:            
+Run it, sit back and watch. It automatically executes stack-operations and tests, while displaying it on console in a video-like manner as it proceeds:         
+python mystack.py           
+      
+Run unittest:           
 python stack_unittest.py    
+
+>a block<br/> 
+>some test<br/> 
+>some test<br/>    
+
 
