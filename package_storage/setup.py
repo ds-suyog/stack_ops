@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="pkg-stack-skscodes",
-    version="0.0.62",
+    version="0.0.63",
     author="suyog k sethia",
     author_email="ssethia86@gmail.com",
     description="It is documented package 'pkg_stack' which provides feature 'stack' functionality",

@@ -20,7 +20,16 @@ from pkg_stack.mystack import Stack
 s = Stack()
 ```       
 For rest information please refer README.md in directory package_storage      
-     
+
+
+### To see full demo of Package 'pkg_stack' operations in video-like manner:    ###
+```
+>>>import pkg_stack.mystack     
+>>>pkg_stack.mystack.main()         
+demo begins..
+..  
+.. 
+```
      
 ## Run source-code/scripts directly:     ##
 ### To run demo:      ###

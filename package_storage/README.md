@@ -71,7 +71,7 @@ stack is empty.
 stack is full.     
 ```
 
-### To see full demo of Package 'pkg_stack' operations in video like manner:    ###
+### To see full demo of Package 'pkg_stack' operations in video-like manner:    ###
 ```
 >>>import pkg_stack.mystack     
 >>>pkg_stack.mystack.main()         
