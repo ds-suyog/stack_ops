@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: pkg-stack-skscodes
-Version: 0.0.63
+Version: 0.0.64
 Summary: It is documented package 'pkg_stack' which provides feature 'stack' functionality
 Home-page: https://github.com/pypa/sampleproject
 Author: suyog k sethia
@@ -64,7 +64,7 @@ Description: # stack_ops package     #
         ``` 
             
         ## Exception Handling:    ##           
-        ### case-1:     ###
+        ### sample case-1:     ###
         ```
         >>>from pkg_stack.mystack import Stack                    
         >>>s = Stack()               
@@ -72,14 +72,14 @@ Description: # stack_ops package     #
         stack is empty.       
         ```
         
-        ### case-2:  ###       
+        ### sample case-2:  ###       
         ```
         >>>s =Stack.from_values(1,2,3,4,5)            
         >>>s.push(5)      
         stack is full.     
         ```
         
-        ### To see full demo of Package 'pkg_stack' operations in video like manner:    ###
+        ### To see full demo of Package 'pkg_stack' operations in video-like manner:    ###
         ```
         >>>import pkg_stack.mystack     
         >>>pkg_stack.mystack.main()         

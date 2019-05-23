@@ -56,7 +56,7 @@ pop(self)
 ``` 
     
 ## Exception Handling:    ##           
-### case-1:     ###
+### sample case-1:     ###
 ```
 >>>from pkg_stack.mystack import Stack                    
 >>>s = Stack()               
@@ -64,7 +64,7 @@ pop(self)
 stack is empty.       
 ```
 
-### case-2:  ###       
+### sample case-2:  ###       
 ```
 >>>s =Stack.from_values(1,2,3,4,5)            
 >>>s.push(5)      
