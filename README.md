@@ -1,4 +1,5 @@
 # Feature 'stack' package: 'pkg_stack' #
+
 I have written documented package 'pkg_stack' which provide feature 'stack' functionality, with exception handling. I also threw in unittest, which is runnable after installing package, and cit checks sanity of package 'pkg_stack'.      
 
 ###  Package Description: https://pypi.org/project/pkg-stack-skscodes/  ###
