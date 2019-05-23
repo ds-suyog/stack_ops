@@ -3,7 +3,7 @@
      
 I have created documented package 'pkg_stack' which provides feature 'stack' general functionality, with exception handling. I also threw in unittest, which is runnable after installing package, and it checks sanity of package 'pkg_stack'.      
      
-## Instal; Package 'pkg_stack' via pip:             ##
+## Install Package 'pkg_stack' via pip:             ##
 ```
 pip install pkg-stack-skscodes
 ```         
