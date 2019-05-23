@@ -17,7 +17,7 @@ For rest information please refer README.md in directory package_storage
      
      
 ## Run source-code/scripts directly:     ##
-To Run Demo:            
+### To run demo:      ###
 Run it, sit back and watch. It automatically executes stack-operations and tests, while displaying it on console in a video-like manner as it proceeds:         
 ```
 $python mystack.py
