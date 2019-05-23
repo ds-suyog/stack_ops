@@ -11,7 +11,13 @@ $pip install pkg-stack-skscodes
      
 ## To import package:          ##
 ```
+import pkg_stack.mystack
+```
+
+## To create Stack instance   ##
+```
 from pkg_stack.mystack import Stack
+s = Stack()
 ```       
 For rest information please refer README.md in directory package_storage      
      
